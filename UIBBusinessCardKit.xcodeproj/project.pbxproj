@@ -37,13 +37,6 @@
 		5632412B2340B5CF002B3D1D /* UIBBusinessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBBusinessCard.swift; sourceTree = "<group>"; };
 		5632412F2340B64B002B3D1D /* UIBBusinessCardRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBBusinessCardRecognitionViewController.swift; sourceTree = "<group>"; };
 		563241342340B8EC002B3D1D /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Vision.framework; sourceTree = DEVELOPER_DIR; };
-		5632413C2340B935002B3D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5632413E2340B935002B3D1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		563241402340B935002B3D1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		563241432340B935002B3D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		563241452340B936002B3D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		563241482340B936002B3D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5632414A2340B936002B3D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +64,6 @@
 			children = (
 				563241132340B5B8002B3D1D /* UIBBusinessCardKit */,
 				5632411E2340B5B8002B3D1D /* UIBBusinessCardKitTests */,
-				5632413B2340B935002B3D1D /* BusinessCardKitDemo */,
 				563241122340B5B8002B3D1D /* Products */,
 				563241332340B8EC002B3D1D /* Frameworks */,
 			);
@@ -113,20 +105,6 @@
 				563241342340B8EC002B3D1D /* Vision.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5632413B2340B935002B3D1D /* BusinessCardKitDemo */ = {
-			isa = PBXGroup;
-			children = (
-				5632413C2340B935002B3D1D /* AppDelegate.swift */,
-				5632413E2340B935002B3D1D /* SceneDelegate.swift */,
-				563241402340B935002B3D1D /* ViewController.swift */,
-				563241422340B935002B3D1D /* Main.storyboard */,
-				563241452340B936002B3D1D /* Assets.xcassets */,
-				563241472340B936002B3D1D /* LaunchScreen.storyboard */,
-				5632414A2340B936002B3D1D /* Info.plist */,
-			);
-			path = BusinessCardKitDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,25 +240,6 @@
 			targetProxy = 5632411C2340B5B8002B3D1D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		563241422340B935002B3D1D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				563241432340B935002B3D1D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		563241472340B936002B3D1D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				563241482340B936002B3D1D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		563241232340B5B8002B3D1D /* Debug */ = {
