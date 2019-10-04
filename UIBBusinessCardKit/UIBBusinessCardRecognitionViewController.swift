@@ -152,7 +152,7 @@ import VisionKit
                 }
             }
             
-            self.delegate?.businessCardRecognitionViewController(self, didRecognize: businessCard, from: UIImage())
+            self.delegate?.businessCardRecognitionViewController(self, didRecognize: businessCard, from: currentImage ?? UIImage())
         } catch {
             self.delegate?.businessCardRecognitionViewController(self, didFailWithError: error, for: currentImage ?? UIImage())
         }
