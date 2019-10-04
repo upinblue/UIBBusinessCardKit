@@ -62,6 +62,7 @@
 		563241072340B5B8002B3D1D = {
 			isa = PBXGroup;
 			children = (
+				561F364423435C2400689BD2 /* License */,
 				563241132340B5B8002B3D1D /* UIBBusinessCardKit */,
 				5632411E2340B5B8002B3D1D /* UIBBusinessCardKitTests */,
 				563241122340B5B8002B3D1D /* Products */,
@@ -85,7 +86,6 @@
 				563241152340B5B8002B3D1D /* Info.plist */,
 				5632412B2340B5CF002B3D1D /* UIBBusinessCard.swift */,
 				5632412F2340B64B002B3D1D /* UIBBusinessCardRecognitionViewController.swift */,
-				561F364423435C2400689BD2 /* License */,
 			);
 			path = UIBBusinessCardKit;
 			sourceTree = "<group>";
