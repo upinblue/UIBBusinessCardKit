@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561F364523435C2400689BD2 /* License in Resources */ = {isa = PBXBuildFile; fileRef = 561F364423435C2400689BD2 /* License */; };
 		5632411B2340B5B8002B3D1D /* UIBBusinessCardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563241112340B5B8002B3D1D /* UIBBusinessCardKit.framework */; };
 		563241202340B5B8002B3D1D /* UIBBusinessCardKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5632411F2340B5B8002B3D1D /* UIBBusinessCardKitTests.swift */; };
 		563241222340B5B8002B3D1D /* UIBBusinessCardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 563241142340B5B8002B3D1D /* UIBBusinessCardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5632412C2340B5CF002B3D1D /* UIBBusinessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5632412B2340B5CF002B3D1D /* UIBBusinessCard.swift */; };
+		563241312340B64B002B3D1D /* UIBBusinessCardRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5632412F2340B64B002B3D1D /* UIBBusinessCardRecognitionViewController.swift */; };
+		563241352340B8EC002B3D1D /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563241342340B8EC002B3D1D /* Vision.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +27,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		561F364423435C2400689BD2 /* License */ = {isa = PBXFileReference; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
 		563241112340B5B8002B3D1D /* UIBBusinessCardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIBBusinessCardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		563241142340B5B8002B3D1D /* UIBBusinessCardKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBBusinessCardKit.h; sourceTree = "<group>"; };
 		563241152340B5B8002B3D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5632411A2340B5B8002B3D1D /* UIBBusinessCardKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIBBusinessCardKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5632411F2340B5B8002B3D1D /* UIBBusinessCardKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBBusinessCardKitTests.swift; sourceTree = "<group>"; };
 		563241212340B5B8002B3D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5632412B2340B5CF002B3D1D /* UIBBusinessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBBusinessCard.swift; sourceTree = "<group>"; };
+		5632412F2340B64B002B3D1D /* UIBBusinessCardRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBBusinessCardRecognitionViewController.swift; sourceTree = "<group>"; };
+		563241342340B8EC002B3D1D /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Vision.framework; sourceTree = DEVELOPER_DIR; };
+		5632413C2340B935002B3D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5632413E2340B935002B3D1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		563241402340B935002B3D1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		563241432340B935002B3D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		563241452340B936002B3D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		563241482340B936002B3D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5632414A2340B936002B3D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563241352340B8EC002B3D1D /* Vision.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +71,9 @@
 			children = (
 				563241132340B5B8002B3D1D /* UIBBusinessCardKit */,
 				5632411E2340B5B8002B3D1D /* UIBBusinessCardKitTests */,
+				5632413B2340B935002B3D1D /* BusinessCardKitDemo */,
 				563241122340B5B8002B3D1D /* Products */,
+				563241332340B8EC002B3D1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +91,9 @@
 			children = (
 				563241142340B5B8002B3D1D /* UIBBusinessCardKit.h */,
 				563241152340B5B8002B3D1D /* Info.plist */,
+				5632412B2340B5CF002B3D1D /* UIBBusinessCard.swift */,
+				5632412F2340B64B002B3D1D /* UIBBusinessCardRecognitionViewController.swift */,
+				561F364423435C2400689BD2 /* License */,
 			);
 			path = UIBBusinessCardKit;
 			sourceTree = "<group>";
@@ -84,6 +105,28 @@
 				563241212340B5B8002B3D1D /* Info.plist */,
 			);
 			path = UIBBusinessCardKitTests;
+			sourceTree = "<group>";
+		};
+		563241332340B8EC002B3D1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				563241342340B8EC002B3D1D /* Vision.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5632413B2340B935002B3D1D /* BusinessCardKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5632413C2340B935002B3D1D /* AppDelegate.swift */,
+				5632413E2340B935002B3D1D /* SceneDelegate.swift */,
+				563241402340B935002B3D1D /* ViewController.swift */,
+				563241422340B935002B3D1D /* Main.storyboard */,
+				563241452340B936002B3D1D /* Assets.xcassets */,
+				563241472340B936002B3D1D /* LaunchScreen.storyboard */,
+				5632414A2340B936002B3D1D /* Info.plist */,
+			);
+			path = BusinessCardKitDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +191,7 @@
 				TargetAttributes = {
 					563241102340B5B8002B3D1D = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					563241192340B5B8002B3D1D = {
 						CreatedOnToolsVersion = 11.0;
@@ -178,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561F364523435C2400689BD2 /* License in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5632412C2340B5CF002B3D1D /* UIBBusinessCard.swift in Sources */,
+				563241312340B64B002B3D1D /* UIBBusinessCardRecognitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +262,25 @@
 			targetProxy = 5632411C2340B5B8002B3D1D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		563241422340B935002B3D1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				563241432340B935002B3D1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		563241472340B936002B3D1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				563241482340B936002B3D1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		563241232340B5B8002B3D1D /* Debug */ = {
@@ -340,6 +406,7 @@
 		563241262340B5B8002B3D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RXYYSN4J75;
@@ -356,6 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.upinblue.UIBBusinessCardKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +432,7 @@
 		563241272340B5B8002B3D1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RXYYSN4J75;
@@ -388,6 +457,7 @@
 		563241292340B5B8002B3D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RXYYSN4J75;
 				INFOPLIST_FILE = UIBBusinessCardKitTests/Info.plist;
@@ -406,6 +476,7 @@
 		5632412A2340B5B8002B3D1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RXYYSN4J75;
 				INFOPLIST_FILE = UIBBusinessCardKitTests/Info.plist;
