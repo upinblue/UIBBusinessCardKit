@@ -143,12 +143,15 @@ import VisionKit
                 }
             }
             
+            // If there is no potential name, pick the first line with two fields. We assume that that is the name.
             if !potentialNames.isEmpty {
-                // Take the top-most unmatched line to be the person/business name.
-                let splitted = potentialNames.first?.components(separatedBy: " ")
-                if splitted?.count ?? 0 >= 2 {
-                    businessCard.firstName = splitted?[0] ?? ""
-                    businessCard.lastName = splitted?[1] ?? ""
+                for potential in potentialNames {
+                    let splitted = potential.components(separatedBy: " ")
+                    if splitted.count == 2 {
+                        businessCard.firstName = splitted[0]
+                        businessCard.lastName = splitted[1]
+                        break
+                    }
                 }
             }
             
