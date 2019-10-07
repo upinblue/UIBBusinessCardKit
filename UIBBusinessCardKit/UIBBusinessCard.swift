@@ -23,6 +23,7 @@
 import UIKit
 import Contacts
 
+@available(iOS 13, *)
 @objc public class UIBBusinessCard: NSObject, Codable {
     
     public var firstName: String?

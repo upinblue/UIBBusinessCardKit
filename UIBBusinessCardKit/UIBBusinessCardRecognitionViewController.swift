@@ -25,6 +25,7 @@ import UIKit
 import Vision
 import VisionKit
 
+@available(iOS 13, *)
 @objc public class UIBBusinessCardRecognitionViewController: UIViewController, VNDocumentCameraViewControllerDelegate {
     public var delegate: UIBBusinessCardRecognitionViewControllerDelegate?
     
