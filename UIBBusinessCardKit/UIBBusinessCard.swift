@@ -36,6 +36,8 @@ import Contacts
     public var address: String?
     public var homePage: String?
     
+    public var scanDate = Date()
+    
     
     public var contact: CNContact {
         get {
@@ -68,6 +70,4 @@ import Contacts
             return mutableContact
         }
     }
-    
-    
 }
